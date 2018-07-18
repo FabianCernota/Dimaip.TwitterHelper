@@ -1,9 +1,9 @@
-prototype(Dimaip.TwitterHelper:Timeline) < prototype(Neos.Fusion:Collection) {
+prototype(FabianCernota.TwitterHelper:Timeline) < prototype(Neos.Fusion:Collection) {
 	@context.user = 'dimaip'
 	@context.count = 10
 	collection = ${Twitter.getRequest('statuses/user_timeline', 'screen_name=' + user + '&count=' + count)}
 	itemName = 'tweet'
-	itemRenderer = Dimaip.TwitterHelper:Tweet
+	itemRenderer = FabianCernota.TwitterHelper:Tweet
 
 	@cache {
 		mode = 'cached'
@@ -11,7 +11,7 @@ prototype(Dimaip.TwitterHelper:Timeline) < prototype(Neos.Fusion:Collection) {
 	}
 }
 
-prototype(Dimaip.TwitterHelper:Tweet) < prototype(Neos.Fusion:Template) {
-	templatePath = 'resource://Dimaip.TwitterHelper/Private/Templates/Tweet.html'
+prototype(FabianCernota.TwitterHelper:Tweet) < prototype(Neos.Fusion:Template) {
+	templatePath = 'resource://FabianCernota.TwitterHelper/Private/Templates/Tweet.html'
 	tweet = ${tweet}
 }

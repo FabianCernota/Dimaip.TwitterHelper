@@ -2,12 +2,12 @@
 Neos:
   Fusion:
     defaultContext:
-      Twitter: Dimaip\TwitterHelper\Eel\TwitterHelper
+      Twitter: FabianCernota\TwitterHelper\Eel\TwitterHelper
   Neos:
     fusion:
       autoInclude:
-        Dimaip.TwitterHelper: true
-Dimaip:
+        FabianCernota.TwitterHelper: true
+FabianCernota:
   TwitterHelper:
     oauthAccessToken: ''
     oauthAccessTokenSecret: ''

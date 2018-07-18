@@ -1,5 +1,5 @@
 <?php
-namespace Dimaip\TwitterHelper\Eel;
+namespace FabianCernota\TwitterHelper\Eel;
 
 use Neos\Eel\ProtectedContextAwareInterface;
 use Neos\ContentRepository\Domain\Model\NodeInterface;
